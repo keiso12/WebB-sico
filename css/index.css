@@ -46,9 +46,9 @@ a {
 }
 
 #conteudo {
-    
     font-family: 'Sans', sans-serif;
     z-index: 1;
+    
 }
 #fundoConteudo{
     z-index: 0;
