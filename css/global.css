@@ -48,6 +48,7 @@ header{
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+    color: white;
 }
 ul li {
     display: inline-block;
@@ -63,7 +64,6 @@ ul li a {
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 15px;
 }
 
 
@@ -95,7 +95,7 @@ ul li:hover ul.dropdown{
 /* ======================================================== */
 
 #conteudo {
-    font-size: 15px;
+    font-size: 18px;
 }
 #fundoConteudo{
     z-index:22;
@@ -145,6 +145,147 @@ footer {
 /* MODO ESCURO */
 /* ======================================================== */
 
-header.dark{
-    background-color: rgb(41, 41, 41);
+.dark-mode body {
+    background-color: #000000;
+} 
+
+.dark-mode #fundoConteudo{
+    background-color: #1f1f1ffa;
+    color: #ffffff;
 }
+
+.dark-mode header{
+    background-color: #1f1f1ffa;
+    color: #ffffff;
+}
+
+.dark-mode #menu{
+    background-color: rgba(85, 4, 4, 0.979);
+    color: #ffffff;
+}
+
+.dark-mode footer{
+    background-color: rgba(85, 4, 4, 0.904);
+    color: #ffffff;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-label {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.checkbox-label:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.checkbox:checked + .checkbox-label:before {
+    opacity: 1;
+}
+
+
+/* ======================================================== */
+/* REAJUSTE DE TELA */
+/* ======================================================== */
+
+@media screen and (max-width: 1300px) {
+    #fundoConteudo {
+      margin: 0px 30px 0px 30px; 
+    }
+    #logoImagem {
+      width: 200px;
+      height: 90px; 
+      margin-bottom: 20px;
+    }
+    #barcoMerry {
+      width: 90px;
+      height: 90px; 
+    }
+    #barcoSunny {
+      width: 80px;
+      height: 80px; 
+    }
+    #menu {
+      font-size: 16px; 
+    }
+    #conteudo {
+      font-size: 16px; 
+    }
+    footer {
+      font-size: 8px; 
+    }
+  }
+  
+  
+@media screen and (max-width: 860px) {
+    #fundoConteudo {
+        margin: 0px 15px 0px 15px; 
+    }
+    #logoImagem {
+      width: 200px;
+      height: 90px; 
+      margin-bottom: 20px;
+    }
+    #barcoMerry {
+      width: 90px;
+      height: 90px; 
+    }
+    #barcoSunny {
+      width: 80px;
+      height: 80px; 
+    }
+    #menu {
+      font-size: 12px; 
+    }
+    #conteudo {
+      font-size: 14px; 
+    }
+    footer {
+      font-size: 8px; 
+    }
+  }
+  
+@media screen and (max-width: 650px) {
+    #fundoConteudo {
+        margin: 0px 15px 0px 15px; 
+    }
+    #logoImagem {
+      width: 200px;
+      height: 90px; 
+      margin-bottom: 20px;
+    }
+    #barcoMerry {
+      width: 90px;
+      height: 90px; 
+    }
+    #barcoSunny {
+      width: 80px;
+      height: 80px; 
+    }
+    #menu {
+      font-size: 12px; 
+    }
+    #conteudo {
+      font-size: 14px; 
+    }
+    footer {
+      font-size: 8px; 
+    }
+  }
+  
